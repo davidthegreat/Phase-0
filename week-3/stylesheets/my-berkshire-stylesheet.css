@@ -1,0 +1,22 @@
+.button {
+  color:#00FF00;
+  padding:10px 15px 10px 15px;
+  border-radius:4px;
+}
+header {
+	background-color:#00FF00;
+  height: 225px;
+  text: bold;
+  text-align: center;
+}
+.copyright{
+  color:#FFFFFF;
+  text-align:center;
+}
+body {
+  color:#000000;
+  font-size: 12px
+}
+li a:hover {
+  background-color: #FFFF00;
+}
