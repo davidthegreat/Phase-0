@@ -1,22 +1,77 @@
-.button {
-  color:#00FF00;
-  padding:10px 15px 10px 15px;
-  border-radius:4px;
+
+background-color {
+  color: #ffffff;
+}
+
+
+a {
+  color:#800080;
+}
+
+body {
+  color:#000080;
+  column-count: 2;
+  font-size: 14px;
+}
+a:visited {
+  color: #800080
+}
+
+.navy {
+  color:#000080;
 }
 header {
-	background-color:#00FF00;
-  height: 225px;
-  text: bold;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+
+}
+
+span {
+  font-size: 30px
+}
+.left{
+  float:left:
+  width:50%;
+}
+
+.right{
+  float:right;
+  width:50%;
+}
+
+ul {
+  -moz-column-count: 2;
+  -moz-column-gap: 35px;
+}
+
+.hline {
+border-bottom: 1px solid black;
+margin-top:15px;
+padding-top: 10px;
+  }
+.center{
   text-align: center;
 }
-.copyright{
-  color:#FFFFFF;
-  text-align:center;
+
+li {
+  margin-bottom: 3em;
 }
-body {
-  color:#000000;
-  font-size: 12px
+
+footer {
+  font-size: 11px;
 }
-li a:hover {
-  background-color: #FFFF00;
-}
+
+/**What is important to know when linking an external file (like a stylesheet) to an HTML file?
+it important to make sure you have the html and css page in the same folder. also that you dont have mispelled words.
+What tricks did you use to help you with positioning? How hard was it to get the site as you wanted it?
+some of the tricks that i did was try a bunch of times till I got what I wanted, Some parts where hard like making the 2 columns.
+What CSS did you use to modify the element style (like size, color, etc.)
+Some of the css that i used whas color to change font and link color. I used padding font-size and many more
+Did you modify the HTML to include classes or ids? If so, which did you choose and why? If you didn't, how would
+you know which one to add to your HTML?
+My Html had mostly classes becuase it was easier to use if i didnt use classes i probly use div tags
+When you compared your site to the actual code base, which do you think had cleaner
+code that followed best practices and why?
+When I compared my code to the code base i though mine was cleaner code because the code base had stuff ive never seen before
+**/
