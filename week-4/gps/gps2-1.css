@@ -1,0 +1,32 @@
+* {
+  text-align: center;
+}
+
+header {
+  background-color: orange;
+  text-align: center;
+
+}
+
+header h1 {
+  color: blue;
+}
+
+.column-1 {
+  background-color: blue;
+  float: left;
+  width: 50%;
+
+}
+
+.column-2 {
+  background-color: green;
+  float: right;
+  width: 50%;
+
+}
+
+footer {
+  background-color: red;
+  clear: both;
+}
