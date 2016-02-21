@@ -34,18 +34,19 @@ end
 #
 
 
-# Person 3
+# Person 3 - David Ramirez
 def my_array_sorting_method(source)
-  source # This line is here to make sure all tests initially fail. Delete it when you begin coding.
+  source.sort_by {|x| x.to_s}
 end
 
 def my_hash_sorting_method(source)
-   source # This line is here to make sure all tests initially fail. Delete it when you begin coding.
+   new_hash = source.sort_by { |x,y| y}
 end
 
 # Identify and describe the Ruby method(s) you implemented.
-#
-#
+#.sort_by will sort the source the way I want I used tbe codeblock to sort it
+#i also tured my x value to a sting using the .to_s mehod
+#for my hash code i did the same thing I just put it in a new hash
 #
 
 
