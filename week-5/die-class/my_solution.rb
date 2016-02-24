@@ -2,28 +2,32 @@
 
 # I worked on this challenge [by myself, with: ]
 
-# I spent [] hours on this challenge.
+# I spent [2] hours on this challenge.
 
 # 0. Pseudocode
 
 # Input:
-# Output:
+# Output:Roll the dice and a number from 1-6 will appear
 # Steps:
+#make a class called Die
 
 
 # 1. Initial Solution
 
 class Die
   def initialize(sides)
-    # code goes here
+    if sides < 1 
+    	raise ArgumentError.new('Number not found')
+    end
+    @sides = sides
   end
 
   def sides
-    # code goes here
+    @xsides = sides
   end
 
   def roll
-    # code goes here
+    rand (@sidies) + 1
   end
 end
 
