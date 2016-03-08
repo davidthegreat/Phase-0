@@ -36,16 +36,16 @@ end
 
 # Person 3
 def my_array_sorting_method(source)
-  source.sort {|x| x.to_s } #used the sort method
+  source.sort_by {|x| x.to_s } #used the sort method
 end
 
 def my_hash_sorting_method(source)
-   new_hash = source a.sort_by { |x,y| y }
+   new_hash = source.sort_by { |x,y| y }
 end
 
 # Identify and describe the Ruby method(s) you implemented.
-#used the sort method to sort the source and I turned the 
-#
+#used the sort method to sort the source and I turned the values into string which they were numbers
+#for the second one. I made a new has and I sorted the has the way it was suppose to store it on th code block
 #
 
 
