@@ -34,52 +34,38 @@ end
 #
 
 
-# Person 3 - David Ramirez
+# Person 3
 def my_array_sorting_method(source)
-  source.sort_by {|x| x.to_s}
+  source.sort {|x| x.to_s } #used the sort method
 end
 
 def my_hash_sorting_method(source)
-   new_hash = source.sort_by { |x,y| y}
+   new_hash = source a.sort_by { |x,y| y }
 end
 
 # Identify and describe the Ruby method(s) you implemented.
-#.sort_by will sort the source the way I want I used tbe codeblock to sort it
-#i also tured my x value to a sting using the .to_s mehod
-#for my hash code i did the same thing I just put it in a new hash
+#used the sort method to sort the source and I turned the 
+#
 #
 
 
-# Person 4 - David Ramirez
+# Person 4
 def my_array_deletion_method!(source, thing_to_delete)
-  source.each do |x| 
-    if x.to_s.include?(thing_to_delete) 
-      source.delete(x) 
-    else
-      nil 
-    end
-  end
-      source 
+  source.dup # This line is here to make sure all tests initially fail. Delete it when you begin coding.
 end
 
 def my_hash_deletion_method!(source, thing_to_delete)
-  if source.include?(thing_to_delete) 
-    source.delete(thing_to_delete) 
-    source 
-  else
-    puts "#{thing_to_delete} not found" 
-  end
+  source.dup # This line is here to make sure all tests initially fail. Delete it when you begin coding.
 end
 
 # Identify and describe the Ruby method(s) you implemented.
-# each do so that it runs every x variable
-#.include? evaluates "thing_to_delete" with each value in both hash and array a
-#and to_s makes the eleemt into a string
-#.delete  this deletes the element from the array 
-# 
+#
+#
+#
 
 
 # Person 5
+
 def my_array_splitting_method(source)
   source # This line is here to make sure all tests initially fail. Delete it when you begin coding.
 end
