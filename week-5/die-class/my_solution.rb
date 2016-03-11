@@ -60,7 +60,7 @@ Why would you use a Ruby class?
 What is the difference between a local variable and an instance variable?
 	a local variables are variables that are located inside a method and can't be acessed outside the method. And instance variable is a variable also located inside a method but this variable can be located outside the method as long as its inside the class.
 Where can an instance variable be used?
-	
+	Instance variables can be used through out the entinre class.
 =end
 
 
