@@ -6,27 +6,17 @@
 
 # Pseudocode
 
-# Input: my name
-# Output:greeting with name 
+# Input:
+# Output:
 # Steps:
 
-
 class NameData
-	attr_reader :name
 
-	def initialize 
-		@name = name
-	end
 end
 
 
 class Greetings
-	def initialize
-		@namedata =NameData.new("David")
-	end
-	def hi
-		puts "#{@namedata.name}! How is it going."
-	end
+
 end
 
 
