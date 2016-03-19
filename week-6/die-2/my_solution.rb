@@ -15,27 +15,6 @@
 
 class Die
   def initialize(labels)
-  	@labels = labels
-  	raise ArgumentError.new("Please enter an array that is not empty.") if labels.length < 1
-  end
-
-  def sides
-  	@labels.length
-  end
-
-  def roll
-  	@labels.sample
-  end	
-end
-
-# die = Die.new(['A', 'B', 'C', 'D', 'E', 'F'])
-# p die.labels  
-# p die.sides 
-# p die.roll
-
-# Refactored Solution
-class Die
-  def initialize(labels)
     @labels = labels
     raise ArgumentError.new("Please enter an array that is not empty.") if labels.length < 1
   end
@@ -49,18 +28,30 @@ class Die
   end 
 end
 
+# die = Die.new(['A', 'B', 'C', 'D', 'E', 'F'])
+# p die.labels
+# p die.sides
+# p die.roll
+
+# Refactored Solution
+#couldn't think of a way to Refactored this dice class.
 
 
+#Reflect
 
-# Reflection
 # What were the main differences between this die class and the last one you created in terms of implementation? Did you need to change much logic to get this to work?
-#   the difrence from this die class and the last on i created was that on this class I was actually very similar most of my work logic did not change.
+# => their wasn't a main difference between this class and the last one. I did not have to change the logic at all, the only diffrence was that I found a method that was easier to use.
+
 # What does this exercise teach you about making code that is easily changeable or modifiable? 
-#   On this exercise it was pretty easly changeable because it was very similar to last die challenge that I didnt have to change alot in this challege mostly had to copy and paste and change some things
+# => This exercise tought me how easy it was to improve my code by using diffrent methods that do the same thing.
+
 # What new methods did you learn when working on this challenge, if any?
-#   During this method i used mehtod that i had already used before
+# => I used the .sample method, which just picks a random number from an array
+
 # What concepts about classes were you able to solidify in this challenge?
-#   A concept that understand better about classes is how to raise arguments work.
+# => some this about classes that I solidify in this challenge is how to initialize a variable works.
+
+
 
 
 
