@@ -65,13 +65,16 @@ end
 
 puts startup_names
 
+#Reflection
+# What are some general rules you can apply to nested arrays?
+# Some of the rules that you can apply 
 
+# What are some ways you can iterate over nested arrays?
+# You can iterate over a nested array by using a map! method 
 
+# Did you find any good new methods to implement or did you re-used one you were already familiar with? What was it and why did you decide that was a good option?
 
-
-
-
-
+# I used methods that I had used I had already used in the past like .map! I had used this before. before we choose we had used each method but didn't work so we had to find a new method so we used map!.
 
 
 
