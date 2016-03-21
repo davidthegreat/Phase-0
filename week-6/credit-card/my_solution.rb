@@ -67,3 +67,11 @@ card = CreditCard.new(4408041234567901)
 card.check_card
 
 # Reflection
+# What was the most difficult part of this challenge for you and your pair?
+# the most diffficult part about this challenge for us was refactoring our work because our final solution was pretty short.
+
+# What new methods did you find to help you when you refactored?
+# A new method that i learned was inject 
+
+# What concepts or learnings were you able to solidify in this challenge?
+# what I learned during this challenge was to use the flatten method.

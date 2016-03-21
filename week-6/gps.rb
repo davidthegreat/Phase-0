@@ -75,17 +75,17 @@ p serving_size_calc("THIS IS AN ERROR", 5)
 
 
 #Reflection
-What did you learn about making code readable by working on this challenge?
-what I learned about making my code readable was how easy it made it for me to understand the code.
+# What did you learn about making code readable by working on this challenge?
+# what I learned about making my code readable was how easy it made it for me to understand the code.
 
-Did you learn any new methods? What did you learn about them?
-during this challenge I learned the unless statement. I learned that this method was when you have an if with a condition that is negative you can write unless insted of if !condition. 
+# Did you learn any new methods? What did you learn about them?
+# during this challenge I learned the unless statement. I learned that this method was when you have an if with a condition that is negative you can write unless insted of if !condition. 
 
-What did you learn about accessing data in hashes? 
-what  i learned about accessing data in a hashes during this challenge was that you can name a value a of the hash inside the parameter of a method and accesse it throughtout the who method.
+# What did you learn about accessing data in hashes? 
+# what  i learned about accessing data in a hashes during this challenge was that you can name a value a of the hash inside the parameter of a method and accesse it throughtout the who method.
 
-What concepts were solidified when working through this challenge?
-some things that i solidified working through this challenge was accessing data in hashes.
+# What concepts were solidified when working through this challenge?
+# some things that i solidified working through this challenge was accessing data in hashes.
 
 
 
