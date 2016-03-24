@@ -16,25 +16,28 @@ var terah = {
 // __________________________________________
 // Write your code below.
 
-
-
-
-
-
-
-
-
-
-
+var adam ={name: "Adam"} 
+terah.spouse = adam;
+terah.weight = 125;
+delete terah.eyeColor;
+adam.spouse = terah;
+terah.children = {};
+var carson = {name: "carson"};
+terah.children.carson = carson;
+var carter = {name: "carter"}
+terah.children.carter = carter
+var colton = {name: "colton"}
+terah.children.colton = colton
+adam.children = terah.children
 // __________________________________________
 // Reflection: Use the reflection guidelines
-//
-//
-//
-//
-//
-//
-var secretNumber = 7
+// 
+// What tests did you have trouble passing? What did you do to make it pass? Why did that work?
+//I had trouble ADDING properties to the variables I had no idea how to do it, The reason I got it to work was because I looked up a tutorial vedio online.
+// How difficult was it to add and delete properties outside of the object itself?
+// deleting properties was the easiest that was straight forward but adding pro[erties was pretty hard because I had no idea how to do it  
+// What did you learn about manipulating objects in this challenge?
+//  I learned how to add objects like a new object to the variable tereah and have the name  of each childe she has.
 
 // __________________________________________
 // Driver Code:  Do not alter code below this line.
