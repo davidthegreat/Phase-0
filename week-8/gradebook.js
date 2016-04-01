@@ -1,11 +1,15 @@
 /*
 Gradebook from Names and Scores
-I worked on this challenge [by myself, with:]
+
+I worked on this challenge [with: Lisa Dannewitz, David Ramirez]
 This challenge took me [#] hours.
+
 You will work with the following two variables.  The first, students, holds the names of four students.
 The second, scores, holds groups of test scores.  The relative positions of elements within the two
 variables match (i.e., 'Joseph' is the first element in students; his scores are the first value in scores.).
+
 Do not alter the students and scores code.
+
 */
 
 var students = ["Joseph", "Susan", "William", "Elizabeth"]
@@ -16,34 +20,58 @@ var scores = [ [80, 70, 70, 100],
                [100, 90, 95, 85] ]
 
 
-
-
-
-
 // __________________________________________
 // Write your code below.
+// var gradebook = {
+//   Joseph: {testScores: scores[0]},
+//   Susan: {testScores: scores[1]},
+//   William: {testScores: scores[2]},
+//   Elizabeth: {testScores: scores[3]},
+//   addScore: function(name,score) {
+//     this[name]["testScores"].push(score);
+//   },
+//   getAverage: function(name){
+//     return average(this[name]["testScores"]);
+//   },
+// };
 
-
-
-
-
-
+// function average(array){ 
+//     var sum = array.reduce(function(a,b){return a+b});
+//     var length = array.length;
+//     var avg = sum / length;
+//     return avg;
+// };
 
 
 // __________________________________________
 // Refactored Solution
 
+var gradebook = {};
+    
+for (var name in students){
+    gradebook[students[name]] ={testScores: scores[name]};
+}
+ 
+gradebook.addScore = function(name,score) {
+    this[name]["testScores"].push(score);
+};
+gradebook.getAverage = function(name){
+    return average(this[name]["testScores"]);
+};
 
-
-
-
-
-
+function average(array){ 
+    return array.reduce(function(a,b){return a+b})/array.length
+};
 
 // __________________________________________
 // Reflect
 
-
+// What did you learn about adding functions to objects?
+// I thought that it was straight foward  the steps that you guys provieded were really helpful 
+// How did you iterate over nested arrays in JavaScript? 
+// for our Refactored Solution we used a for in loop
+// Were there any new methods you were able to incorporate? If so, what were they and how did they work?
+// a new thig that I used was a for in loop all the other methods where the as in ruby.
 
 
 
