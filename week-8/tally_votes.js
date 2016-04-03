@@ -63,27 +63,75 @@ var officers = {
 }
 
 // Pseudocode
+//input:students votes
+//output: winners
+//steps: Iterate through votes and access each name property
+// if each name not saved as property inside voteCount, create a new property for voteCount with the value of 1
+// else increment value of property by 1
+// now that we have voteCount filled, iterate throught votecount positions to find out the max votes and assign them to officer positions
 
 
 // __________________________________________
 // Initial Solution
+for (var name in votes)
+  if(votes.hasOwnProperty(name)){
+    var poll = votes[name];
+    for (var position in poll){
+      if (voteCount[position].hasOwnProperty([poll[position]])){
+        voteCount[position][poll[position]] += 1;
+      }
+      else { voteCount[position][poll[position]] = 1
+            };
+    }
+  }
+for (var key in voteCount){
+  var tallies = voteCount[key];
+  var winner = 0;
+    for (var names in tallies) {
+      if (tallies[names] > winner){
+      winner = tallies[names];
+      officers[key] = names;
+    }
+    }
+}
 
-
-
-
-
-
+console.log(voteCount)
 
 // __________________________________________
 // Refactored Solution
+for (var name in votes)
+  if(votes.hasOwnProperty(name)){
+    var poll = votes[name];
+    for (var position in poll){
+      if (voteCount[position].hasOwnProperty([poll[position]])){
+        voteCount[position][poll[position]] += 1;
+      }
+      else { voteCount[position][poll[position]] = 1
+            };
+    }
+  }
+for (var key in voteCount){
+  var tallies = voteCount[key];
+  var winner = 0;
+    for (var names in tallies) {
+      if (tallies[names] > winner){
+      winner = tallies[names];
+      officers[key] = names;
+    }
+    }
+}
 
-
-
-
+console.log(voteCount)
 
 
 // __________________________________________
 // Reflection
+// What did you learn about iterating over nested objects in JavaScript?
+//   Iterateing over a nested objects is more harder than iterating over a nested hash in ruby. JavaScript is a lot picky with is semi colons and brackets we had a lot of problems with that.
+// Were you able to find useful methods to help you with this?
+// Yea the hasOwnProperty method was very helpful it returns a boolean if the objecthas a specified property.
+// What concepts were solidified in the process of working through this challenge?
+//   I think I solidified the for in loop I had problems learning this loop but after watching a couple of videos about this it helped me out.
 
 
 
